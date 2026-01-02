@@ -1,0 +1,31 @@
+
+{
+  "logo": {
+    "text": "ROYELLE",
+    "icon": "R",
+    "image": "images/logo.png"
+  },
+
+  "slider": [
+    {
+      "title": "Luxury & Compfort",
+      "description": "In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Maecenas sollicitudin est in libero pretium interdum.\n",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80"
+    },
+    {
+      "title": "PARADISE AWAITS",
+      "description": "Relax by our infinity pool with breathtaking views",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80"
+    },
+    {
+      "title": "CULINARY EXCELLENCE",
+      "description": "Savor exquisite dishes crafted by world-renowned chefs",
+      "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1920&q=80"
+    },
+    {
+      "title": "ELEGANT SUITES",
+      "description": "Immerse yourself in comfort and sophisticated design",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1920&q=80"
+    }
+  ]
+}
