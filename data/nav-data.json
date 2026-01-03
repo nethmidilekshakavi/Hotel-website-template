@@ -1,0 +1,20 @@
+{
+  "logo": {
+    "image": "images/images.png",
+    "text": "ROYELLE"
+  },
+  "menu": [
+    { "name": "Home", "link": "#home", "active": true },
+    { "name": "Rooms & Suites", "link": "#rooms" },
+    { "name": "Dining", "link": "#dining" },
+    { "name": "Facilities", "link": "#facilities" },
+    { "name": "Experiences", "link": "#experiences" },
+    { "name": "Gallery", "link": "#gallery" },
+    { "name": "About Us", "link": "#about" },
+    { "name": "Contact Us", "link": "#contact" }
+  ],
+  "bookNow": {
+    "name": "Book Now",
+    "link": "#book"
+  }
+}
