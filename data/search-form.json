@@ -1,0 +1,46 @@
+{
+  "fields": [
+    {
+      "type": "date",
+      "name": "checkin",
+      "label": "Check in",
+      "required": true
+    },
+    {
+      "type": "date",
+      "name": "checkout",
+      "label": "Check out",
+      "required": true
+    },
+    {
+      "type": "select",
+      "name": "guests",
+      "label": "Guests",
+      "required": true,
+      "options": [
+        "1 Guest",
+        "2 Guests",
+        "3 Guests",
+        "4 Guests",
+        "5+ Guests"
+      ]
+    },
+    {
+      "type": "select",
+      "name": "children",
+      "label": "Children",
+      "required": false,
+      "options": ["0", "1", "2", "3", "4+"]
+    },
+    {
+      "type": "select",
+      "name": "rooms",
+      "label": "Rooms",
+      "required": true,
+      "options": ["1", "2", "3", "4", "5+"]
+    }
+  ],
+  "submit": {
+    "text": "Search"
+  }
+}

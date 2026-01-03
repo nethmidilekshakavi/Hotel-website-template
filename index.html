@@ -106,119 +106,22 @@
 
 <!-- SEARCH CARD -->
 <div class="search-card">
-    <form class="search-form">
-        <div class="form-group">
-            <label>Check in</label>
-            <input type="date" required>
-        </div>
-
-        <div class="form-group">
-            <label>Check out</label>
-            <input type="date" required>
-        </div>
-
-        <div class="form-group">
-            <label>Guests</label>
-            <select required>
-                <option value="">Select guests</option>
-                <option>1 Guest</option>
-                <option>2 Guests</option>
-                <option>3 Guests</option>
-                <option>4 Guests</option>
-                <option>5+ Guests</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>Children</label>
-            <select>
-                <option value="">Select children</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>Rooms</label>
-            <select required>
-                <option value="">Select rooms</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5+</option>
-            </select>
-        </div>
-
-        <button type="submit" class="search-btn">Search</button>
-    </form>
+    <form class="search-form" id="searchForm"></form>
 </div>
 
 <!-- ABOUT PREVIEW -->
 <section class="about-preview" id="about">
     <div class="about-container">
-        <div class="about-content">
-            <div class="about-label">Welcome to Royelle</div>
-            <h2>Experience Luxury <span>& Elegance</span> in Every Stay</h2>
-            <p class="about-description">
-                Nestled in the heart of Colombo, Royelle Hotel stands as a beacon of refined hospitality and timeless elegance. Our luxurious establishment combines world-class amenities with warm Sri Lankan hospitality to create an unforgettable experience for every guest.
-            </p>
-            <p class="about-description">
-                Whether you're here for business or leisure, our strategically located property offers breathtaking city views, award-winning dining experiences, state-of-the-art conference facilities, and a serene spa sanctuary where you can unwind and rejuvenate.
-            </p>
 
-            <div class="about-features">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </div>
-                    <span class="feature-text">Prime City Location</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                    <span class="feature-text">5-Star Service</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="bi bi-cup-hot-fill"></i>
-                    </div>
-                    <span class="feature-text">Gourmet Dining</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="bi bi-water"></i>
-                    </div>
-                    <span class="feature-text">Infinity Pool & Spa</span>
-                </div>
-            </div>
+        <div class="about-content" id="aboutContent"></div>
 
-            <a href="#about-full" class="learn-more-btn">Learn More About Us</a>
-        </div>
+        <div class="about-images" id="aboutImages"></div>
 
-        <div class="about-images">
-            <div class="about-img-grid">
-                <div class="about-img-item">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Hotel Exterior">
-                </div>
-                <div class="about-img-item">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800" alt="Reception">
-                </div>
-                <div class="about-img-item">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800" alt="Interior">
-                </div>
-            </div>
-            <div class="experience-badge">
-                <span class="number">25+</span>
-                <span class="text">Years</span>
-            </div>
-        </div>
     </div>
 </section>
+
+<script src="js/about.js"></script>
+
 
 <!-- ROOMS -->
 <section id="rooms">
@@ -778,6 +681,10 @@
 
 <script src="js/nav.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/search-form.js"></script>
+<script src="js/about.js"></script>
+
+
 
 </body>
 </html>

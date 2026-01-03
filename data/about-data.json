@@ -1,0 +1,49 @@
+{
+  "label": "Welcome to Royelle",
+  "title": "Experience Luxury",
+  "titleHighlight": "& Elegance",
+  "descriptions": [
+    "Nestled in the heart of Colombo, Royelle Hotel stands as a beacon of refined hospitality and timeless elegance. Our luxurious establishment combines world-class amenities with warm Sri Lankan hospitality to create an unforgettable experience for every guest.",
+    "Whether you're here for business or leisure, our strategically located property offers breathtaking city views, award-winning dining experiences, state-of-the-art conference facilities, and a serene spa sanctuary where you can unwind and rejuvenate."
+  ],
+  "features": [
+    {
+      "icon": "bi-geo-alt-fill",
+      "text": "Prime City Location"
+    },
+    {
+      "icon": "bi-star-fill",
+      "text": "5-Star Service"
+    },
+    {
+      "icon": "bi-cup-hot-fill",
+      "text": "Gourmet Dining"
+    },
+    {
+      "icon": "bi-water",
+      "text": "Infinity Pool & Spa"
+    }
+  ],
+  "button": {
+    "text": "Learn More About Us",
+    "link": "#about-full"
+  },
+  "images": [
+    {
+      "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+      "alt": "Hotel Exterior"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800",
+      "alt": "Reception"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+      "alt": "Interior"
+    }
+  ],
+  "experience": {
+    "years": "25+",
+    "label": "Years"
+  }
+}
