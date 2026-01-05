@@ -9,21 +9,21 @@
       "name": "Deluxe Room",
       "description": "Spacious room with modern amenities and city views.",
       "price": "$180 / Night",
-      "image": "images/rooms/deluxe.jpg"
+      "image": "https://i.pinimg.com/1200x/3a/9c/73/3a9c73d26b00859e69316b79503c2e29.jpg"
     },
     {
       "id": 2,
       "name": "Executive Suite",
       "description": "Elegant suite with a separate living area and premium facilities.",
       "price": "$260 / Night",
-      "image": "images/rooms/executive.jpg"
+      "image": "https://i.pinimg.com/1200x/fd/16/32/fd163276e64fe3a76b3ea08490e641a9.jpg"
     },
     {
       "id": 3,
       "name": "Presidential Suite",
       "description": "Luxury suite offering panoramic views, private lounge, and VIP service.",
       "price": "$420 / Night",
-      "image": "images/rooms/presidential.jpg"
+      "image": "https://i.pinimg.com/736x/ad/6b/a7/ad6ba7bf5446d0acbc39adb41cbc94c9.jpg"
     }
   ]
 }

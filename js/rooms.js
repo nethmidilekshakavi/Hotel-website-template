@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("./rooms.json")
+    fetch("data/rooms.json")
         .then(res => {
             if (!res.ok) {
                 throw new Error("rooms.json not found");
@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(data => {
 
-            /* SECTION TITLE & SUBTITLE */
-            document.getElementById("sectionTitle").textContent =
+            // Section title & subtitle
+            document.getElementById("roomsTitle").textContent =
                 data.section.title;
 
-            document.getElementById("sectionSubtitle").textContent =
+            document.getElementById("roomsSubtitle").textContent =
                 data.section.subtitle;
 
-            /* ROOMS */
+            // Rooms
             const container = document.getElementById("roomsContainer");
             container.innerHTML = "";
 
@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 container.appendChild(card);
             });
-
         })
         .catch(err => console.error("Rooms JSON Load Error:", err));
 });

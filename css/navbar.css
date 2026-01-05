@@ -1353,3 +1353,112 @@ section {
         text-align: center;
     }
 }
+
+/* ROOMS SECTION */
+#rooms {
+    padding: 80px 6%;
+    background: #fafafa;
+    text-align: center;
+}
+
+/* Title & Subtitle */
+.section-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1c1c1c;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* Grid */
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.room-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+/* Image */
+.room-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Content */
+.room-content {
+    padding: 24px;
+    text-align: left;
+}
+
+.room-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.room-desc {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* Price */
+.room-price {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3E2723;
+    margin-bottom: 18px;
+}
+
+/* Button */
+.room-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    background: var(--chocolate);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.room-btn:hover {
+    background: #3E2723;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .room-card img {
+        height: 200px;
+    }
+}
