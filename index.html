@@ -139,34 +139,35 @@
     <div class="services-grid" id="servicesContainer"></div>
 </section>
 
-<!-- PROMOTIONS -->
-<section class="promotions-section">
-    <div class="section-header">
-        <div class="label">Special Offers</div>
-        <h2>Exclusive Promotions & Packages</h2>
-        <p>Take advantage of our limited-time offers and seasonal packages</p>
-    </div>
+<!--&lt;!&ndash; PROMOTIONS &ndash;&gt;-->
+<!--<section class="promotions-section">-->
+<!--    <div class="section-header">-->
+<!--        <div class="label">Special Offers</div>-->
+<!--        <h2>Exclusive Promotions & Packages</h2>-->
+<!--        <p>Take advantage of our limited-time offers and seasonal packages</p>-->
+<!--    </div>-->
 
-    <div class="promotions-grid" id="promotionsContainer"></div>
-</section>
+<!--    <div class="promotions-grid" id="promotionsContainer"></div>-->
+<!--</section>-->
 
 <!-- REVIEWS -->
 <section class="reviews-section">
     <div class="reviews-container">
         <div class="section-header">
-            <span class="label">Guest Reviews</span>
-            <h2>What Our Guests Say</h2>
-            <p>Read authentic reviews from our valued guests</p>
+            <span class="label" id="reviewsLabel"></span>
+            <h2 id="reviewsTitle"></h2>
+            <p id="reviewsSubtitle"></p>
         </div>
 
         <div class="reviews-grid" id="reviewsContainer"></div>
     </div>
 </section>
 
+
 <!-- GALLERY -->
 <section class="gallery-section" id="gallery">
-    <h2 class="section-title">Our Gallery</h2>
-    <p class="section-subtitle">Explore our collection of stunning moments and experiences</p>
+    <h2 class="section-title" id="galleryTitle"></h2>
+    <p class="section-subtitle" id="gallerySubtitle"></p>
 
     <div class="gallery-grid" id="galleryContainer"></div>
 </section>
@@ -294,386 +295,7 @@
     </div>
 </footer>
 
-<script>
-    // METHOD 1: INLINE DATA (Current - Works immediately)
-    // You can edit this data directly here
-    const websiteData = {
-        rooms: [
-            {
-                image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800",
-                badge: "Popular",
-                title: "Deluxe Room",
-                description: "Spacious room with king-size bed, modern amenities, and city views",
-                features: [
-                    { icon: "bi-people", text: "2 Guests" },
-                    { icon: "bi-square", text: "35 m²" },
-                    { icon: "bi-wifi", text: "Free WiFi" }
-                ],
-                price: "$150",
-                priceUnit: "/ night"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
-                badge: "Luxury",
-                title: "Executive Suite",
-                description: "Premium suite with separate living area, balcony, and premium amenities",
-                features: [
-                    { icon: "bi-people", text: "4 Guests" },
-                    { icon: "bi-square", text: "65 m²" },
-                    { icon: "bi-cup-hot", text: "Mini Bar" }
-                ],
-                price: "$280",
-                priceUnit: "/ night"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
-                badge: "Premium",
-                title: "Presidential Suite",
-                description: "Ultimate luxury with private pool, butler service, and panoramic views",
-                features: [
-                    { icon: "bi-people", text: "6 Guests" },
-                    { icon: "bi-square", text: "120 m²" },
-                    { icon: "bi-star-fill", text: "VIP Service" }
-                ],
-                price: "$550",
-                priceUnit: "/ night"
-            }
-        ],
-        services: [
-            {
-                icon: "bi-cup-hot-fill",
-                title: "Fine Dining",
-                description: "Experience culinary excellence at our award-winning restaurants featuring international cuisine and local delicacies."
-            },
-            {
-                icon: "bi-water",
-                title: "Infinity Pool & Spa",
-                description: "Relax and rejuvenate at our rooftop infinity pool and full-service spa with panoramic city views."
-            },
-            {
-                icon: "bi-activity",
-                title: "Fitness Center",
-                description: "State-of-the-art gym facilities with modern equipment and professional trainers available 24/7."
-            },
-            {
-                icon: "bi-briefcase-fill",
-                title: "Business Center",
-                description: "Fully equipped meeting rooms and conference facilities perfect for corporate events and gatherings."
-            },
-            {
-                icon: "bi-car-front-fill",
-                title: "Valet Parking",
-                description: "Complimentary valet parking and airport transfer services for all our guests."
-            },
-            {
-                icon: "bi-headset",
-                title: "24/7 Concierge",
-                description: "Our dedicated concierge team is always ready to assist with your requests and reservations."
-            }
-        ],
-        promotions: [
-            {
-                image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
-                badge: "Save 30%",
-                title: "Summer Escape Package",
-                description: "Enjoy a luxurious summer getaway with complimentary breakfast, spa access, and late checkout.",
-                price: "$210",
-                originalPrice: "$300",
-                validity: "Valid till Aug 31",
-                validityIcon: "bi-calendar-check"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800",
-                badge: "Exclusive",
-                title: "Romantic Honeymoon Suite",
-                description: "Celebrate love with candlelit dinner, champagne, couples spa treatment, and rose petal decoration.",
-                price: "$450",
-                originalPrice: null,
-                validity: "Year-round",
-                validityIcon: "bi-heart-fill"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800",
-                badge: "New",
-                title: "Business Travel Deal",
-                description: "Perfect for corporate stays with meeting room access, high-speed WiFi, and business lounge privileges.",
-                price: "$180",
-                originalPrice: "$240",
-                validity: "Weekdays only",
-                validityIcon: "bi-briefcase-fill"
-            }
-        ],
-        reviews: [
-            {
-                image: "https://randomuser.me/api/portraits/women/44.jpg",
-                name: "Sarah Mitchell",
-                location: "London, UK",
-                rating: 5,
-                text: "Absolutely stunning hotel! The attention to detail and exceptional service made our honeymoon unforgettable. The rooftop pool has breathtaking views, and the spa was pure bliss. Highly recommend!",
-                date: "Stayed: December 2025",
-                platform: "TripAdvisor"
-            },
-            {
-                image: "https://randomuser.me/api/portraits/men/32.jpg",
-                name: "James Anderson",
-                location: "New York, USA",
-                rating: 5,
-                text: "Perfect location for business travel. The meeting facilities are top-notch, and the staff went above and beyond to accommodate our needs. The restaurant's breakfast buffet is phenomenal!",
-                date: "Stayed: November 2025",
-                platform: "Google Reviews"
-            },
-            {
-                image: "https://randomuser.me/api/portraits/women/65.jpg",
-                name: "Priya Sharma",
-                location: "Mumbai, India",
-                rating: 5,
-                text: "A luxurious escape in the heart of the city! The Presidential Suite exceeded all expectations. Impeccable service, elegant rooms, and world-class amenities. Will definitely return!",
-                date: "Stayed: January 2026",
-                platform: "Booking.com"
-            }
-        ],
-        gallery: [
-            {
-                image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
-                title: "Hotel Exterior",
-                description: "Stunning architectural design"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800",
-                title: "Elegant Lobby",
-                description: "Luxurious reception area"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
-                title: "Premium Interior",
-                description: "Sophisticated room design"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
-                title: "Infinity Pool",
-                description: "Rooftop pool with city views"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800",
-                title: "Fine Dining",
-                description: "Gourmet restaurant experience"
-            },
-            {
-                image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
-                title: "Presidential Suite",
-                description: "Ultimate luxury accommodation"
-            }
-        ]
-    };
 
-    // RENDER ROOMS
-    function renderRooms() {
-        const container = document.getElementById('roomsContainer');
-        container.innerHTML = websiteData.rooms.map(room => `
-        <div class="room-card">
-            <div class="room-image">
-                <img src="${room.image}" alt="${room.title}">
-                <div class="room-badge">${room.badge}</div>
-            </div>
-            <div class="room-info">
-                <h3>${room.title}</h3>
-                <p>${room.description}</p>
-                <div class="room-features">
-                    ${room.features.map(feature => `
-                        <span><i class="${feature.icon}"></i> ${feature.text}</span>
-                    `).join('')}
-                </div>
-                <div class="room-price">${room.price} <span>${room.priceUnit}</span></div>
-                <a href="#book" class="room-btn">Book Now</a>
-            </div>
-        </div>
-    `).join('');
-    }
-
-    // RENDER SERVICES
-    function renderServices() {
-        const container = document.getElementById('servicesContainer');
-        container.innerHTML = websiteData.services.map(service => `
-        <div class="service-card">
-            <div class="service-icon">
-                <i class="${service.icon}"></i>
-            </div>
-            <h3>${service.title}</h3>
-            <p>${service.description}</p>
-        </div>
-    `).join('');
-    }
-
-    // RENDER PROMOTIONS
-    function renderPromotions() {
-        const container = document.getElementById('promotionsContainer');
-        container.innerHTML = websiteData.promotions.map(promo => `
-        <div class="promo-card">
-            <div class="promo-image">
-                <img src="${promo.image}" alt="${promo.title}">
-                <div class="promo-badge">${promo.badge}</div>
-            </div>
-            <div class="promo-content">
-                <h3>${promo.title}</h3>
-                <p>${promo.description}</p>
-                <div class="promo-details">
-                    <div class="promo-price">
-                        <span class="label">Starting from</span>
-                        <div>
-                            <span class="amount">${promo.price}</span>
-                            ${promo.originalPrice ? `<span class="original">${promo.originalPrice}</span>` : ''}
-                        </div>
-                    </div>
-                    <div class="promo-validity">
-                        <i class="${promo.validityIcon}"></i>
-                        <span>${promo.validity}</span>
-                    </div>
-                </div>
-                <a href="#book" class="promo-btn">Book This Offer</a>
-            </div>
-        </div>
-    `).join('');
-    }
-
-    // RENDER REVIEWS
-    function renderReviews() {
-        const container = document.getElementById('reviewsContainer');
-        container.innerHTML = websiteData.reviews.map(review => `
-        <div class="review-card">
-            <div class="review-header">
-                <img src="${review.image}" alt="${review.name}" class="reviewer-img">
-                <div class="reviewer-info">
-                    <h4>${review.name}</h4>
-                    <span class="location">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        ${review.location}
-                    </span>
-                </div>
-            </div>
-            <div class="rating">
-                ${'<i class="bi bi-star-fill"></i>'.repeat(review.rating)}
-            </div>
-            <p class="review-text">${review.text}</p>
-            <div class="review-date">
-                <i class="bi bi-calendar-check"></i>
-                <span>${review.date}</span>
-            </div>
-            <span class="review-platform">${review.platform}</span>
-        </div>
-    `).join('');
-    }
-
-    // RENDER GALLERY
-    function renderGallery() {
-        const container = document.getElementById('galleryContainer');
-        container.innerHTML = websiteData.gallery.map(item => `
-        <div class="gallery-item">
-            <img src="${item.image}" alt="${item.title}">
-            <div class="gallery-overlay">
-                <h3>${item.title}</h3>
-                <p>${item.description}</p>
-            </div>
-        </div>
-    `).join('');
-    }
-
-    // SLIDER FUNCTIONALITY
-    let currentSlideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.slider-dot');
-
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-
-        if (index >= slides.length) currentSlideIndex = 0;
-        if (index < 0) currentSlideIndex = slides.length - 1;
-
-        slides[currentSlideIndex].classList.add('active');
-        dots[currentSlideIndex].classList.add('active');
-    }
-
-    function changeSlide(direction) {
-        currentSlideIndex += direction;
-        showSlide(currentSlideIndex);
-    }
-
-    function currentSlide(index) {
-        currentSlideIndex = index;
-        showSlide(currentSlideIndex);
-    }
-
-    // Auto slide every 5 seconds
-    setInterval(() => {
-        currentSlideIndex++;
-        showSlide(currentSlideIndex);
-    }, 5000);
-
-    // NAVBAR SCROLL EFFECT
-    window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // HAMBURGER MENU
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-        });
-    });
-
-    // SMOOTH SCROLLING
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const offset = 80;
-                const targetPosition = target.offsetTop - offset;
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // INITIALIZE ON PAGE LOAD
-    document.addEventListener('DOMContentLoaded', () => {
-        renderRooms();
-        renderServices();
-        renderPromotions();
-        renderReviews();
-        renderGallery();
-    });
-
-    // EXPORT DATA AS JSON (for developers)
-    function downloadJSON() {
-        const dataStr = JSON.stringify(websiteData, null, 2);
-        const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-        const exportFileDefaultName = 'hotel-data.json';
-        const linkElement = document.createElement('a');
-        linkElement.setAttribute('href', dataUri);
-        linkElement.setAttribute('download', exportFileDefaultName);
-        linkElement.click();
-    }
-
-    // To download the JSON data, run downloadJSON() in the browser console
-</script>
 
 
 <script src="js/nav.js"></script>
@@ -681,6 +303,9 @@
 <script src="js/search-form.js"></script>
 <script src="js/about.js"></script>
 <script src="js/rooms.js"></script>
+<script src="js/reviews.js"></script>
+<script src="js/services.js"></script>
+<script src="js/gallery.js"></script>
 
 
 

@@ -1,0 +1,33 @@
+{
+  "section": {
+    "label": "Guest Reviews",
+    "title": "What Our Guests Say",
+    "subtitle": "Read authentic reviews from our valued guests"
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Amanda Lee",
+      "country": "United Kingdom",
+      "rating": 5,
+      "comment": "Absolutely amazing stay! The rooms were spotless, staff was friendly, and the service exceeded expectations.",
+      "image": "https://i.pinimg.com/1200x/0a/f8/04/0af804ef7c0476d5be070890cfb085db.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Daniel Roberts",
+      "country": "Australia",
+      "rating": 4,
+      "comment": "Beautiful hotel with excellent facilities. The pool and spa were highlights of our stay.",
+      "image": "https://i.pinimg.com/1200x/0a/f8/04/0af804ef7c0476d5be070890cfb085db.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sophia Martinez",
+      "country": "Spain",
+      "rating": 5,
+      "comment": "Luxurious experience from start to finish. Highly recommended for a relaxing getaway.",
+      "image": "https://i.pinimg.com/1200x/0a/f8/04/0af804ef7c0476d5be070890cfb085db.jpg"
+    }
+  ]
+}

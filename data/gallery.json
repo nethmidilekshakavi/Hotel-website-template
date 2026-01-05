@@ -1,0 +1,33 @@
+{
+  "section": {
+    "title": "Our Gallery",
+    "subtitle": "Explore our collection of stunning moments and experiences"
+  },
+  "images": [
+    {
+      "id": 1,
+      "src": "https://i.pinimg.com/1200x/b7/78/19/b778199a4d53097299240b6d16ff282d.jpg",
+      "alt": "Luxury Room"
+    },
+    {
+      "id": 2,
+      "src": "https://i.pinimg.com/1200x/96/64/29/966429e10cd98e0f91eed715d2e659e9.jpg",
+      "alt": "Infinity Pool"
+    },
+    {
+      "id": 3,
+      "src": "https://i.pinimg.com/736x/4d/10/d3/4d10d330e1704c4794a61ca39f9ebd15.jpg",
+      "alt": "Fine Dining Experience"
+    },
+    {
+      "id": 4,
+      "src": "https://i.pinimg.com/1200x/c9/f7/dd/c9f7dd76f2944ba73fe5b34ea83f9f07.jpg",
+      "alt": "Spa & Wellness"
+    },
+    {
+      "id": 5,
+      "src": "https://i.pinimg.com/1200x/59/22/95/592295be6e2cfd79540cf0f9d14b1c1a.jpg",
+      "alt": "Fitness Center"
+    }
+  ]
+}

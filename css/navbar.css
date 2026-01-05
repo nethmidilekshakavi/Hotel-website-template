@@ -1462,3 +1462,451 @@ section {
         height: 200px;
     }
 }
+
+/* Services Section Styles */
+.services-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f8f5f2 0%, #fff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(93, 64, 55, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.services-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(62, 39, 35, 0.03) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-header .label {
+    display: inline-block;
+    padding: 8px 24px;
+    background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(93, 64, 55, 0.2);
+    animation: fadeInDown 0.6s ease;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #3E2723;
+    margin: 0 0 20px;
+    line-height: 1.2;
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #5D4037;
+    line-height: 1.6;
+    opacity: 0.9;
+    animation: fadeInUp 0.6s ease 0.4s both;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Service Card (add this class to individual service items) */
+.service-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(62, 39, 35, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(93, 64, 55, 0.1);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #5D4037 0%, #3E2723 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(62, 39, 35, 0.15);
+    border-color: rgba(93, 64, 55, 0.2);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(93, 64, 55, 0.1) 0%, rgba(62, 39, 35, 0.05) 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.service-card:hover .service-icon {
+    background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%);
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.service-icon i,
+.service-icon svg {
+    font-size: 32px;
+    color: #5D4037;
+    transition: all 0.4s ease;
+}
+
+.service-card:hover .service-icon i,
+.service-card:hover .service-icon svg {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3E2723;
+    margin: 0 0 15px;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover .service-title {
+    color: #5D4037;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #5D4037;
+    line-height: 1.7;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5D4037;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.service-link::after {
+    content: '→';
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-link {
+    color: #3E2723;
+    gap: 12px;
+}
+
+.service-card:hover .service-link::after {
+    transform: translateX(5px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-section {
+        padding: 60px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 36px;
+    }
+
+    .section-header p {
+        font-size: 16px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .service-title {
+        font-size: 20px;
+    }
+}
+
+/* REVIEWS SECTION */
+.reviews-section {
+    padding: 90px 6%;
+    background: #fafafa;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 60px;
+}
+
+.section-header .label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #b08d57;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #1d1d1d;
+}
+
+.section-header p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Grid */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Review Card */
+.review-card {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 55px rgba(0,0,0,0.12);
+}
+
+/* Header */
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.review-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.review-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+}
+
+.review-header span {
+    font-size: 13px;
+    color: #888;
+}
+
+/* Stars */
+.review-stars {
+    font-size: 18px;
+    color: #f5b50a;
+    margin-bottom: 18px;
+}
+
+/* Comment */
+.review-comment {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .review-card {
+        padding: 28px 24px;
+    }
+}
+
+/* GALLERY SECTION */
+.gallery-section {
+    padding: 90px 6%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Title & Subtitle */
+.gallery-section .section-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1c1c1c;
+}
+
+.gallery-section .section-subtitle {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Gallery Card */
+.gallery-card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* Image Styling */
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Hover Effects */
+.gallery-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.gallery-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery-section .section-title {
+        font-size: 28px;
+    }
+
+    .gallery-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        gap: 15px;
+    }
+}
+
