@@ -1,0 +1,29 @@
+{
+  "section": {
+    "title": "Rooms & Suites",
+    "subtitle": "Choose from our selection of elegantly designed accommodations"
+  },
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Deluxe Room",
+      "description": "Spacious room with modern amenities and city views.",
+      "price": "$180 / Night",
+      "image": "images/rooms/deluxe.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Executive Suite",
+      "description": "Elegant suite with a separate living area and premium facilities.",
+      "price": "$260 / Night",
+      "image": "images/rooms/executive.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Presidential Suite",
+      "description": "Luxury suite offering panoramic views, private lounge, and VIP service.",
+      "price": "$420 / Night",
+      "image": "images/rooms/presidential.jpg"
+    }
+  ]
+}
