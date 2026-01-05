@@ -31,61 +31,68 @@
 <!-- HERO SLIDER -->
 <div class="slider-container" id="home">
     <div id="slidesWrapper">
-    <div class="slide active">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80" alt="Luxury Hotel">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h1>Luxury & Comfort</h1>
-            <p>Experience the perfect blend of elegance, comfort, and world-class hospitality in the heart of the city</p>
-            <div class="cta-buttons">
-                <a href="#book" class="cta-btn cta-primary">Book Your Stay</a>
-                <a href="#rooms" class="cta-btn cta-secondary">Explore Rooms</a>
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80" alt="Luxury Hotel">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1>Luxury & Comfort</h1>
+                <p>Experience the perfect blend of elegance, comfort, and world-class hospitality in the heart of the city</p>
+                <div class="cta-buttons">
+                    <a href="#book" class="cta-btn cta-primary">Book Your Stay</a>
+                    <a href="#rooms" class="cta-btn cta-secondary">Explore Rooms</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80" alt="Hotel Pool">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1>Paradise Awaits</h1>
+                <p>Relax by our infinity pool with breathtaking city views</p>
+                <div class="cta-buttons">
+                    <a href="#book" class="cta-btn cta-primary">Reserve Now</a>
+                    <a href="#services" class="cta-btn cta-secondary">View Facilities</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1920&q=80" alt="Restaurant">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1>Culinary Excellence</h1>
+                <p>Savor exquisite dishes crafted by world-renowned chefs</p>
+                <div class="cta-buttons">
+                    <a href="#restaurant" class="cta-btn cta-primary">View Menu</a>
+                    <a href="#book" class="cta-btn cta-secondary">Make Reservation</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1920&q=80" alt="Suite">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1>Elegant Suites</h1>
+                <p>Immerse yourself in comfort and sophisticated design</p>
+                <div class="cta-buttons">
+                    <a href="#rooms" class="cta-btn cta-primary">Explore Suites</a>
+                    <a href="#services" class="cta-btn cta-secondary">View Amenities</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="slide">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80" alt="Hotel Pool">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h1>Paradise Awaits</h1>
-            <p>Relax by our infinity pool with breathtaking city views</p>
-            <div class="cta-buttons">
-                <a href="#book" class="cta-btn cta-primary">Reserve Now</a>
-                <a href="#services" class="cta-btn cta-secondary">View Facilities</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1920&q=80" alt="Restaurant">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h1>Culinary Excellence</h1>
-            <p>Savor exquisite dishes crafted by world-renowned chefs</p>
-            <div class="cta-buttons">
-                <a href="#restaurant" class="cta-btn cta-primary">View Menu</a>
-                <a href="#book" class="cta-btn cta-secondary">Make Reservation</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1920&q=80" alt="Suite">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-            <h1>Elegant Suites</h1>
-            <p>Immerse yourself in comfort and sophisticated design</p>
-            <div class="cta-buttons">
-                <a href="#rooms" class="cta-btn cta-primary">Explore Suites</a>
-                <a href="#services" class="cta-btn cta-secondary">View Amenities</a>
-            </div>
-        </div>
-    </div>
-    </div>
+    <!-- Slider Arrows -->
     <div class="slider-arrow arrow-left" id="prevSlide" onclick="changeSlide(-1)">‹</div>
     <div class="slider-arrow arrow-right" id="nextSlide" onclick="changeSlide(1)">›</div>
 
+    <!-- Slider Dots -->
     <div class="slider-nav" id="sliderDots">
         <span class="slider-dot active" onclick="currentSlide(0)"></span>
         <span class="slider-dot" onclick="currentSlide(1)"></span>
@@ -94,9 +101,10 @@
     </div>
 </div>
 
-<!-- SEARCH CARD -->
-<div class="search-card">
-    <form class="search-form" id="searchForm"></form>
+<!-- Booking Widget Below Slider -->
+<div class="booking-widget" id="book">
+    <iframe id="booking-iframe" src="https://demo.trackerstay.com/booking_view_new2/1"
+            width="100%" style="border:none;background-color:transparent;"></iframe>
 </div>
 
 <!-- ABOUT PREVIEW -->
@@ -169,7 +177,7 @@
         <p>Join thousands of satisfied guests and experience the difference today. Book your appointment now or contact us for more information.</p>
 
         <div class="cta-buttons-section">
-            <a href="#book" class="btn-cta btn-cta-primary">Book Now</a>
+            <a href="booking.html" class="btn-cta btn-cta-primary">Book Now</a>
             <a href="#contact-form" class="btn-cta btn-cta-secondary">Contact Us</a>
         </div>
 

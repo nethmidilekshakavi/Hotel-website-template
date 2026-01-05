@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+    #booking-iframe {
+      width: 100%;
+      margin: 0 auto;
+      z-index: 1;
+      border: none;
+      overflow: hidden;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<div class="booking-widget">
+
+  <iframe id="booking-iframe" width="100%" name="booking-iframe"></iframe>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const queryString = window.location.search;
+      let iframeBaseURL = "https://demo.trackerstay.com/booking/check_availability/next/1";
+
+
+      document.getElementById("booking-iframe").src = `${iframeBaseURL}${queryString}`;
+      window.addEventListener('message', function (e) {
+        const iframe = document.getElementById('booking-iframe');
+        if (!iframe) return;
+
+        const data = e.data;
+        if (!data || !data.type) return;
+
+        if (e.data.type === 'bookingClicked') {
+          // Update iframe height
+          iframe.style.height = e.data.height + 'px';
+
+          // Scroll parent page to top smoothly
+          window.scrollTo({top: 600, behavior: 'smooth'});
+        }
+
+        // Optional: handle other messages like iframeHeight dynamically
+        if (e.data.type === 'iframeHeight') {
+          iframe.style.height = e.data.height + 'px';
+        }
+
+        if (data.type === "embedFloatingBar") {
+          const oldBar = document.querySelector(".mobile-booking-bar");
+          if (oldBar) oldBar.remove();
+
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = data.html.trim();
+          const newBar = wrapper.firstElementChild;
+
+          // Style it fixed at bottom
+          Object.assign(newBar.style, {
+            position: "fixed",
+            bottom: "0",
+            left: "0",
+            width: "100%",
+            zIndex: "1000000",
+            display: "block"
+          });
+
+          document.body.appendChild(newBar);
+
+          const header = newBar.querySelector(".mobile-booking-header");
+          if (header) {
+            header.addEventListener("click", function (e) {
+              e.preventDefault();
+              console.log("Parent: mobile-booking-header clicked → sending openGuestModal");
+
+              const iframe = document.getElementById("booking-iframe");
+              if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.postMessage({ type: "openGuestModal" }, "*");
+                console.log("Parent: message sent to iframe to open modal");
+              }
+            });
+          }
+
+          function toggleMobileBar() {
+            if (window.innerWidth < 992) {
+              newBar.style.display = "block";
+            } else {
+              newBar.style.display = "none";
+            }
+          }
+          toggleMobileBar();
+          window.addEventListener("resize", toggleMobileBar);
+
+          // Hook Continue → send back to iframe
+          const continueBtn = newBar.querySelector("#mobile_continue_button");
+          if (continueBtn) {
+            continueBtn.addEventListener("click", () => {
+              iframe.contentWindow.postMessage(
+                      {type: "continueClickedFromParent"},
+                      "*"
+              );
+            });
+          }
+        }
+
+        // 👇 Handle updates (live totals)
+        if (data.type === "updateFloatingBar" || data.type === "UPDATE_BOOKING_BAR") {
+          const totalEl = document.getElementById("booking-total-mobile");
+          const roomEl = document.getElementById("mobile-room-count");
+          const guestEl = document.getElementById("mobile-guest-count");
+          const dateRangeEl = document.getElementById("mobile-date-range");
+
+          if (totalEl && data.total)
+            totalEl.textContent = "LKR " + Number(data.total).toLocaleString();
+          if (roomEl && data.totalRooms)
+            roomEl.textContent = `${data.totalRooms} ${data.totalRooms === 1 ? "Room" : "Rooms"}`;
+
+          if (guestEl && data.totalGuests)
+            guestEl.textContent = `${data.totalGuests} ${data.totalGuests === 1 ? "Guest" : "Guests"}`;
+
+          if (dateRangeEl && data.checkinDate && data.checkoutDate)
+            dateRangeEl.textContent = `${data.checkinDate} — ${data.checkoutDate}`;
+        }
+
+      });
+
+      document.addEventListener("click", function (e) {
+        const btn = e.target.closest("#mobile_continue_button, #floating-continue-btn, .btn-continue");
+        if (!btn) return;
+
+        const iframe = document.getElementById("booking-iframe");
+        if (!iframe || !iframe.contentWindow) return;
+
+        console.log("Parent: Continue clicked, sending message to iframe2");
+
+        iframe.contentWindow.postMessage({type: "continueClickedFromParent"}, "*");
+      });
+
+      window.addEventListener("message", function(e) {
+        const continueBtn = document.querySelector("#mobile_continue_button, #floating-continue-btn , #mobile-booking-inner");
+        if (!continueBtn) return;
+
+        if (e.data?.type === "hideParentContinueButton") {
+          // Hide the parent Continue button
+          continueBtn.style.display = "none";
+          console.log('gooo');
+          setTimeout(() => {
+            const scrollContainer = document.scrollingElement || document.documentElement || document.body;
+            console.log('Scroll height:', document.documentElement.scrollHeight);
+            console.log('Client height:', document.documentElement.clientHeight);
+            scrollContainer.scrollTo({ top: 600, behavior: 'smooth' });
+            console.log('Scrolled to top');
+          }, 100);
+        }
+        else if (e.data?.type === "showParentContinueButton") {
+          // Show the parent Continue button
+          continueBtn.style.display = "block";
+        }
+      });
+
+      window.addEventListener("message", function(e) {
+        if (e.data?.type === "hideParentFloatingBar") {
+          // Hide the floating bar in parent
+          const floatingBar = document.querySelector(".mobile-booking-bar, #floating-booking-bar");
+          if (floatingBar){
+            floatingBar.remove();
+          }
+        }
+      });
+    });
+  </script>
+</div>
+</body>
+</html>

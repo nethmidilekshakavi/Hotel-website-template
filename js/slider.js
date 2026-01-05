@@ -77,3 +77,21 @@ function autoSlide() {
         showSlide(currentIndex + 1);
     }, 5000);
 }
+
+
+
+    window.addEventListener("message", function(event) {
+    if (event.origin !== "https://demo.trackerstay.com") return;
+    if (event.data === "goToNextPage") {
+    window.location.href = currentDomain + "/booking/";
+}
+}, false);
+
+    // Optional: auto-adjust iframe height
+    window.addEventListener('message', function(e) {
+    if (e.data.type === 'iframeHeight') {
+    const iframe = document.getElementById('booking-iframe');
+    if (iframe) iframe.style.height = e.data.height + 'px';
+}
+});
+
