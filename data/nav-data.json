@@ -4,11 +4,11 @@
     "text": "ROYELLE"
   },
   "menu": [
-    { "name": "Home", "link": "#home", "active": true },
+    { "name": "Home", "link": "index.html", "active": true },
     { "name": "Dining", "link": "#dining" },
     { "name": "Facilities", "link": "#facilities" },
     { "name": "Experiences", "link": "#experiences" },
-    { "name": "Contact Us", "link": "#contact" }
+    { "name": "Contact Us", "link": "contact-us.html" }
   ],
   "bookNow": {
     "name": "Book Now",

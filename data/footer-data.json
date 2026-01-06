@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "name": "ROYELLE",
+    "description": "Experience luxury redefined at Royelle Hotel. We blend timeless elegance with modern comfort to create unforgettable memories.",
+    "social": [
+      { "icon": "facebook", "link": "#" },
+      { "icon": "instagram", "link": "#" },
+      { "icon": "twitter", "link": "#" },
+      { "icon": "linkedin", "link": "#" },
+      { "icon": "youtube", "link": "#" }
+    ]
+  },
+
+  "quickLinks": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Dining", "href": "#Dining" },
+    { "label": "Facilities", "href": "#Facilities" },
+    { "label": "Experiences", "href": "#Experiences" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+
+  "services": [
+    "Room Service",
+    "Spa & Wellness",
+    "Swimming Pool",
+    "Conference Hall",
+    "Airport Transfer",
+    "Car Rental"
+  ],
+
+  "contact": {
+    "address": "123 Marine Drive, Colombo 03, Sri Lanka",
+    "phone": "+94 11 234 5678",
+    "email": "info@royelle.com"
+  },
+
+  "newsletter": {
+    "title": "Newsletter",
+    "placeholder": "Your email"
+  },
+
+  "footerBottom": {
+    "copyright": "© 2026 Royelle Hotel. All Rights Reserved.",
+    "links": ["Privacy Policy", "Terms & Conditions", "Sitemap"]
+  }
+}

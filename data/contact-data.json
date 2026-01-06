@@ -1,0 +1,42 @@
+{
+
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "Kassapay is ready to provide the right solution according to your needs",
+    "backgroundImage": "https://i.pinimg.com/1200x/d1/9d/79/d19d79095c54a3d11bab4889d39a7286.jpg"
+  },
+"getInTouch": {
+    "title": "Get in touch",
+    "description": "Sociis neque viverra lacus placerat amet efficitur molestie vehicula cubilia ac condimentum",
+
+    "items": [
+      {
+        "icon": "map-marker-alt",
+        "title": "Head Office",
+        "content": "Jalan Cempaka Wangi No.22<br>Jakarta - Indonesia"
+      },
+      {
+        "icon": "envelope",
+        "title": "Email Us",
+        "content": "hello@yourdomain.tld<br>hello@yourdomain.tld"
+      },
+      {
+        "icon": "phone",
+        "title": "Call Us",
+        "content": "Phone: +6221.2002.2012<br>Fax: +6221.2002.2013"
+      }
+    ],
+
+    "social": [
+      "facebook-f",
+      "linkedin-in",
+      "twitter",
+      "youtube"
+    ]
+  },
+
+  "form": {
+    "title": "Send us a message",
+    "buttonText": "Send"
+  }
+}
