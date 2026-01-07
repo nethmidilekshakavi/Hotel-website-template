@@ -12,6 +12,6 @@
   ],
   "bookNow": {
     "name": "Book Now",
-    "link": "#book"
+    "link": "booking.html"
   }
 }
