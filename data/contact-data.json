@@ -3,17 +3,17 @@
   "hero": {
     "title": "Contact Us",
     "subtitle": "Kassapay is ready to provide the right solution according to your needs",
-    "backgroundImage": "https://i.pinimg.com/1200x/d1/9d/79/d19d79095c54a3d11bab4889d39a7286.jpg"
+    "backgroundImage": "images/Garden-View_3.jpg"
   },
 "getInTouch": {
-    "title": "Get in touch",
-    "description": "Sociis neque viverra lacus placerat amet efficitur molestie vehicula cubilia ac condimentum",
+    "title": "Ravan Resort Tangalle",
+    "description": "",
 
     "items": [
       {
         "icon": "map-marker-alt",
-        "title": "Head Office",
-        "content": "Jalan Cempaka Wangi No.22<br>Jakarta - Indonesia"
+        "title": "No 50 , Parakrama Rd, Tangalle",
+        "content": ""
       },
       {
         "icon": "envelope",

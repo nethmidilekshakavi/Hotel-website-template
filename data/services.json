@@ -7,18 +7,8 @@
     },
     {
       "icon": "bi-water",
-      "title": "Infinity Pool & Spa",
+      "title": "Infinity Pool",
       "description": "Relax and rejuvenate at our rooftop infinity pool and full-service spa with panoramic city views."
-    },
-    {
-      "icon": "bi-activity",
-      "title": "Fitness Center",
-      "description": "State-of-the-art gym facilities with modern equipment and professional trainers available 24/7."
-    },
-    {
-      "icon": "bi-briefcase-fill",
-      "title": "Business Center",
-      "description": "Fully equipped meeting rooms and conference facilities perfect for corporate events and gatherings."
     },
     {
       "icon": "bi-car-front-fill",
@@ -29,6 +19,16 @@
       "icon": "bi-headset",
       "title": "24/7 Concierge",
       "description": "Our dedicated concierge team is always ready to assist with your requests and reservations."
+    },
+    {
+      "icon": "bi-wifi",
+      "title": "Free Wi-Fi",
+      "description": "Stay connected with high-speed internet throughout the resort."
+    },
+    {
+      "icon": "bi-bell-fill",
+      "title": "Room Service",
+      "description": "Enjoy meals and amenities delivered to your room."
     }
   ]
 }

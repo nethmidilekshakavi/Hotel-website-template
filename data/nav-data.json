@@ -5,9 +5,6 @@
   },
   "menu": [
     { "name": "Home", "link": "index.html", "active": true },
-    { "name": "Dining", "link": "dining.html" },
-    { "name": "Facilities", "link": "#facilities" },
-    { "name": "Experiences", "link": "#experiences" },
     { "name": "Contact Us", "link": "contact-us.html" }
   ],
   "bookNow": {

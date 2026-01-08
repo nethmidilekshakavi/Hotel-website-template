@@ -30,10 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ).join("")}
                 </div>
 
-                <div class="experience-badge">
-                    <span class="number">${data.experience.years}</span>
-                    <span class="text">${data.experience.label}</span>
-                </div>
+               
             `;
 
         })
