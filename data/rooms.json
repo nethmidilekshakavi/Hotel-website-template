@@ -3,27 +3,35 @@
     "title": "Rooms & Suites",
     "subtitle": "Choose from our selection of elegantly designed accommodations"
   },
+
   "rooms": [
     {
       "id": 1,
-      "name": "Deluxe Room",
-      "description": "Spacious room with modern amenities and city views.",
-      "price": "$180 / Night",
-      "image": "https://i.pinimg.com/1200x/3a/9c/73/3a9c73d26b00859e69316b79503c2e29.jpg"
+      "name": "COZY ROOM",
+      "description": "This air-conditioned double room includes a flat-screen TV with cable channel...",
+      "price": "",
+      "image": "images/cozy-370x210.png"
     },
     {
       "id": 2,
-      "name": "Executive Suite",
-      "description": "Elegant suite with a separate living area and premium facilities.",
-      "price": "$260 / Night",
-      "image": "https://i.pinimg.com/1200x/fd/16/32/fd163276e64fe3a76b3ea08490e641a9.jpg"
+      "name": "SUPERIOR CHALET",
+      "description": "This chalet has a balcony, cable TV and air conditioning.",
+      "price": "",
+      "image": "images/cabana5-740x420.png"
     },
     {
       "id": 3,
-      "name": "Presidential Suite",
-      "description": "Luxury suite offering panoramic views, private lounge, and VIP service.",
-      "price": "$420 / Night",
-      "image": "https://i.pinimg.com/736x/ad/6b/a7/ad6ba7bf5446d0acbc39adb41cbc94c9.jpg"
+      "name": "DELUXE DOUBLE ROOM",
+      "description": "This double room features a electric kettle, flat-screen TV and air condition...",
+      "price": "",
+      "image": "images/double3-1-740x420.png"
+    },
+    {
+      "id": 4,
+      "name": "DELUXE TRIPLE ROOM",
+      "description": "This triple room has a balcony, satellite TV and air conditioning.",
+      "price": "",
+      "image": "images/tripler-370x210.png"
     }
   ]
 }
