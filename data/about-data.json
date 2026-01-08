@@ -1,46 +1,30 @@
 {
-  "label": "Welcome to Royelle",
-  "title": "Experience Luxury",
-  "titleHighlight": "& Elegance",
+  "label": "Welcome to RAVAN",
+  "title": "Enjoy Your Stay in Our Hotel",
+  "titleHighlight": "",
+
   "descriptions": [
-    "Nestled in the heart of Colombo, Royelle Hotel stands as a beacon of refined hospitality and timeless elegance. Our luxurious establishment combines world-class amenities with warm Sri Lankan hospitality to create an unforgettable experience for every guest.",
-    "Whether you're here for business or leisure, our strategically located property offers breathtaking city views, award-winning dining experiences, state-of-the-art conference facilities, and a serene spa sanctuary where you can unwind and rejuvenate."
+    "Located prominently in Tangalle by the shoreline in the South of the beautiful Island, Ravan Resort is the ideal intimate retreat to experience the beautiful Sri Lankan beaches located less than 100 meters away, Embrace the quality of our exceptional 14 rooms all including A/C, cable TV, hot water, along with 4 of our 2 story cabana/chalet rooms.",
+    "All guest rooms come with air conditioning, a flat-screen TV with satellite channels, a kettle, a bidet, free toiletries and a desk. Rooms are complete with a private bathroom fitted with a shower, while some units at the resort also have a seating area. At Ravan Resort Tangalle all rooms have bed linen and towels."
   ],
-  "features": [
-    {
-      "icon": "bi-geo-alt-fill",
-      "text": "Prime City Location"
-    },
-    {
-      "icon": "bi-star-fill",
-      "text": "5-Star Service"
-    },
-    {
-      "icon": "bi-cup-hot-fill",
-      "text": "Gourmet Dining"
-    },
-    {
-      "icon": "bi-water",
-      "text": "Infinity Pool & Spa"
-    }
-  ],
-  "button": {
-    "text": "Learn More About Us",
-    "link": "#about-full"
-  },
+
   "images": [
     {
-      "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+      "src": "images/WhatsApp-Image-2024-12-26-at-08.45.01_b9ec191f-scaled.jpg",
       "alt": "Hotel Exterior"
     },
     {
-      "src": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800",
-      "alt": "Reception"
+      "src": "images/about4.jpeg",
+      "alt": "Reception Area"
     },
     {
-      "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
-      "alt": "Interior"
+      "src": "images/about3.jpg",
+      "alt": "Hotel Interior"
     }
-  ]
+  ],
 
+  "experience": {
+    "years": "15+",
+    "label": "Years of Excellence"
+  }
 }
