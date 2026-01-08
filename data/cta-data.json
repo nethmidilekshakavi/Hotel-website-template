@@ -1,38 +1,17 @@
 {
-  "cta": {
-    "id": "contact",
-    "title": "Ready to Get Started?",
-    "description": "Join thousands of satisfied guests and experience the difference today. Book your appointment now or contact us for more information.",
+  "title": "Ready to Book Your Stay?",
+  "description": "Join thousands of happy guests and enjoy a luxurious experience at Ravan Resort.",
 
-    "buttons": [
-      {
-        "text": "Book Now",
-        "link": "booking.html",
-        "type": "primary"
-      },
-      {
-        "text": "Contact Us",
-        "link": "#contact-form",
-        "type": "secondary"
-      }
-    ],
-
-    "features": [
-      {
-        "icon": "⚡",
-        "title": "Fast Response",
-        "description": "Get replies within 24 hours"
-      },
-      {
-        "icon": "🎯",
-        "title": "Expert Service",
-        "description": "Professional quality guaranteed"
-      },
-      {
-        "icon": "💯",
-        "title": "100% Satisfaction",
-        "description": "Money-back guarantee"
-      }
-    ]
-  }
+  "buttons": [
+    {
+      "text": "Book Now",
+      "link": "booking.html",
+      "class": "btn-cta btn-cta-primary"
+    },
+    {
+      "text": "Contact Us",
+      "link": "contact.html",
+      "class": "btn-cta btn-cta-secondary"
+    }
+  ]
 }

@@ -35,13 +35,16 @@ fetch("data/contact-data.json")
 
         // Social Icons
         const socialContainer = document.getElementById("socialIcons");
-        data.getInTouch.social.forEach(icon => {
+        socialContainer.innerHTML = "";
+
+        data.getInTouch.social.forEach(item => {
             socialContainer.innerHTML += `
-                <div class="social-icon">
-                    <i class="fab fa-${icon}"></i>
-                </div>
-            `;
+    <a href="${item.link}" target="_blank" class="social-icon">
+      <i class="fab fa-${item.icon}"></i>
+    </a>
+  `;
         });
+
 
         // Form
         document.getElementById("formTitle").textContent = data.form.title;
@@ -49,3 +52,5 @@ fetch("data/contact-data.json")
 
     })
     .catch(err => console.error("Contact JSON error:", err));
+
+

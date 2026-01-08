@@ -6,27 +6,27 @@
   "images": [
     {
       "id": 1,
-      "src": "https://i.pinimg.com/1200x/b7/78/19/b778199a4d53097299240b6d16ff282d.jpg",
+      "src": "images/465967390_1111627880970794_3795553048866238920_n.jpg",
       "alt": "Luxury Room"
     },
     {
       "id": 2,
-      "src": "https://i.pinimg.com/1200x/96/64/29/966429e10cd98e0f91eed715d2e659e9.jpg",
+      "src": "images/b5ea84b0-a3f4-4f66-b4c9-70e1b1d4c6b7-scaled-370x250.jpeg",
       "alt": "Infinity Pool"
     },
     {
       "id": 3,
-      "src": "https://i.pinimg.com/736x/4d/10/d3/4d10d330e1704c4794a61ca39f9ebd15.jpg",
+      "src": "images/465983041_1111627960970786_5764952788951063343_n-370x250.jpg",
       "alt": "Fine Dining Experience"
     },
     {
       "id": 4,
-      "src": "https://i.pinimg.com/1200x/c9/f7/dd/c9f7dd76f2944ba73fe5b34ea83f9f07.jpg",
+      "src": "images/cabana5-740x420.png",
       "alt": "Spa & Wellness"
     },
     {
       "id": 5,
-      "src": "https://i.pinimg.com/1200x/59/22/95/592295be6e2cfd79540cf0f9d14b1c1a.jpg",
+      "src": "images/729b1ef9-b37f-49ce-b04b-d038d87cb576-scaled-370x250.jpeg",
       "alt": "Fitness Center"
     }
   ]

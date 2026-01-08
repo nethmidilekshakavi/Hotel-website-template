@@ -18,22 +18,26 @@
       {
         "icon": "envelope",
         "title": "Email Us",
-        "content": "hello@yourdomain.tld<br>hello@yourdomain.tld"
-      },
-      {
-        "icon": "phone",
-        "title": "Call Us",
-        "content": "Phone: +6221.2002.2012<br>Fax: +6221.2002.2013"
+        "content": "Info@ravantangalle.com"
       }
     ],
 
-    "social": [
-      "facebook-f",
-      "linkedin-in",
-      "twitter",
-      "youtube"
-    ]
-  },
+  "social": [
+    {
+      "icon": "facebook-f",
+      "link": "https://www.facebook.com/RavanTangalle/"
+    },
+    {
+      "icon": "instagram",
+      "link": "https://www.instagram.com/ravanhotels/"
+    },
+    {
+      "icon": "tiktok",
+      "link": "https://www.tiktok.com/@ravantangalle"
+    }
+  ]
+
+},
 
   "form": {
     "title": "Send us a message",

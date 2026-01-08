@@ -1,37 +1,31 @@
 {
   "brand": {
-    "name": "ROYELLE",
-    "description": "Experience luxury redefined at Royelle Hotel. We blend timeless elegance with modern comfort to create unforgettable memories.",
+    "name": "RAVAN - Tangalle",
+    "description": "Enjoy a cozy stay at Ravan Resort Tangalle, with comfy rooms and charming cabanas near Sri Lanka's beautiful beaches.",
     "social": [
-      { "icon": "facebook", "link": "#" },
-      { "icon": "instagram", "link": "#" },
-      { "icon": "twitter", "link": "#" },
-      { "icon": "linkedin", "link": "#" },
-      { "icon": "youtube", "link": "#" }
+      { "icon": "facebook", "link": "https://www.facebook.com/RavanTangalle/" },
+      { "icon": "instagram", "link": "https://www.instagram.com/ravanhotels/" },
+      { "icon": "tiktok", "link": "https://www.tiktok.com/@ravantangalle" }
     ]
   },
 
   "quickLinks": [
     { "label": "Home", "href": "#home" },
-    { "label": "Dining", "href": "#Dining" },
-    { "label": "Facilities", "href": "#Facilities" },
-    { "label": "Experiences", "href": "#Experiences" },
     { "label": "Contact", "href": "#contact" }
   ],
 
   "services": [
-    "Room Service",
-    "Spa & Wellness",
-    "Swimming Pool",
-    "Conference Hall",
-    "Airport Transfer",
-    "Car Rental"
+    "Fine Dining",
+    "Infinity Pool",
+    "Valet Parking",
+    "24/7 Concierge",
+    "Free Wi-Fi",
+    "Room Service"
   ],
 
   "contact": {
-    "address": "123 Marine Drive, Colombo 03, Sri Lanka",
-    "phone": "+94 11 234 5678",
-    "email": "info@royelle.com"
+    "address": "No 50 , Parakrama Rd, Tangalle",
+    "email": "Info@ravantangalle.com"
   },
 
   "newsletter": {
@@ -40,7 +34,7 @@
   },
 
   "footerBottom": {
-    "copyright": "© 2026 Royelle Hotel. All Rights Reserved.",
-    "links": ["Privacy Policy", "Terms & Conditions", "Sitemap"]
+    "copyright": "© 2026 Proudly powered by Ribelz.",
+    "links": ["Booking Policy | Privacy Policy"]
   }
 }
